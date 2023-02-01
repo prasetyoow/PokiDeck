@@ -12,7 +12,7 @@ export default function PokemonCard({
   statATP,
   statDeff,
 }) {
-  // const bgTypes = {
+  // const colors = {
   //   rock: "rgb(148, 81, 81)",
   //   ghost: "rgb(247, 247, 247)",
   //   electric: "rgb(255, 255, 161)",
@@ -22,18 +22,23 @@ export default function PokemonCard({
   //   fire: "#FBE3DF",
   //   grass: "#E2F9E1",
   //   water: "#E0F1FD",
+  //   normal: "#A8A77A",
+  //   ice: "#96D9D6",
+  //   ground: "#E2BF65",
+  //   psychic: "#F95587",
+  //   dragon: "#6F35FC",
+  //   dark: "#705746",
+  //   steel: "#B7B7CE",
   // };
-
   // console.log(type);
 
-  // const bgTypes =
-  //   "bg-grass flex flex-col items-center justify-center m-2 border-2 shadow-xl rounded-xl";
+  const style =
+    type +
+    " flex flex-col items-center justify-center m-2 border-2 shadow-xl rounded-xl";
 
   return (
     <>
-      <div
-        className={`bg-${type} flex flex-col items-center justify-center m-2 border-2 shadow-xl rounded-xl`}
-      >
+      <div className={style}>
         <div className="w-full h-11 bg-gradient-to-r from-yellow-200 to-yellow-500 flex justify-between px-2 rounded-t-xl">
           <div className="flex gap-3">
             <img className="w-10 h-9 mt-1" src={image} alt={name} />
