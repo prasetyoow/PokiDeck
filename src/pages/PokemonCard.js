@@ -34,17 +34,17 @@ export default function PokemonCard({
 
   const style =
     type +
-    " flex flex-col items-center justify-center m-2 border-2 shadow-xl rounded-xl";
+    " flex w-72 sm:w-76 lg:w-80 xl:w-3/12 flex-col items-center justify-center m-2 border-2 shadow-xl rounded-xl";
 
   return (
     <>
       <div className={style}>
         <div className="w-full h-11 bg-gradient-to-r from-yellow-200 to-yellow-500 flex justify-between px-2 rounded-t-xl">
           <div className="flex gap-3">
-            <img className="w-10 h-9 mt-1" src={image} alt={name} />
-            <p className="font-bold text-xl mt-2">No. {id}</p>
+            <img className="w-19 h-9 mt-1" src={image} alt={name} />
+            <p className="font-bold text-lg mt-2">No. {id}</p>
           </div>
-          <p className="first-letter:capitalize font-bold text-xl mt-2">
+          <p className="first-letter:capitalize font-bold text-lg mt-2">
             {name}
           </p>
           <img className="w-14 h-7 mt-2" src={pokeball} alt="pokeball" />
@@ -53,30 +53,30 @@ export default function PokemonCard({
 
         {/* Main Stats */}
         <div className="flex mx-10 border-b-2">
-          <div className="bg-gray-400 w-40">
+          <div className="bg-gray-400 w-32 2xl:w-40">
             <p className="text-center text-xl text-white">Type</p>
           </div>
-          <div className="bg-white w-40">
+          <div className="bg-white w-28 2xl:w-40">
             <p className="first-letter:capitalize text-center text-xl">
               {type}
             </p>
           </div>
         </div>
         <div className="flex mx-10 border-b-2">
-          <div className="bg-gray-400 w-40">
+          <div className="bg-gray-400 w-32 2xl:w-40">
             <p className="text-center text-xl text-white">Height</p>
           </div>
-          <div className="bg-white w-40">
+          <div className="bg-white w-28 2xl:w-40">
             <p className="first-letter:capitalize text-center text-xl">
               {height} Cm
             </p>
           </div>
         </div>
         <div className="flex mx-10 border-b-2">
-          <div className="bg-gray-400 w-40">
+          <div className="bg-gray-400 w-32 2xl:w-40">
             <p className="text-center text-xl text-white">Weight</p>
           </div>
-          <div className="bg-white w-40">
+          <div className="bg-white w-28 2xl:w-40">
             <p className="first-letter:capitalize text-center text-xl">
               {weight} Lbs
             </p>
@@ -84,7 +84,7 @@ export default function PokemonCard({
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-5 mb-3 w-80">
+        <div className="mt-5 mb-3 w-60 2xl:w-80">
           <div className="bg-slate-500 h-8 border-b-2">
             <div className="flex justify-between mx-10">
               <p className="text-center text-xl text-white">HP</p>
